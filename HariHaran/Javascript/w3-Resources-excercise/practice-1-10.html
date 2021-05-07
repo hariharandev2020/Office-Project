@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     
+    <h3>Excercise No-2</h3>
+    <button onclick="myPrint()"> Print </button>
+
+    <br><br>
+
+    <h3>Excercise No-8</h3>
+    <input type="numbers" maxlength="2" max="10" id="ex-8" value= "give a number of 1-10" >
+    
+    <button id="my-btn" onclick="checkNum()"> Check it </button>
+    <br>
+    <p id="ex-8"> </p>
+
+    <h3>Excercise No-10</h3>
+
+    <input type="numbers" maxlength="2" id="num1" style="width: 50px;"> &nbsp;
+    <input type="numbers" maxlength="2" id="num2" style="width: 50px;">
+
+    <br><br>
+    <button id="b1" onclick="multiply()"> Multiply </button>
+    <button id="b2" onclick="divide()"> Divide </button>
+    <br>
+    <p id="ex-10">  </p>
+    <br><br>
+
+ <script>
+    
+    document.write("Excercise No 1");
+
+    document.write("<br>" + "<br>");
+    
+    var today = new Date().getDay();
+    
+    var dates = ["Sunday","Monday","Tuesday", "Wednesday","Thursday","Friday", "Saturday",]
+    
+    document.write("&nbsp;" + "&nbsp;"  + "&nbsp;"  + "Today is :" + "&nbsp;"  + dates[today]);
+
+    document.write("<br>" + "<br>");
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+     
+// Excercise - 2
+
+function myPrint(){
+
+   return window.print();
+
+}
+  
+     
+///////////////////////////////////////////////////////////////////////////////////////
+    document.write("Excercise No 3");
+
+    document.write("<br>" + "<br>");
+
+    var currentDate = new Date();
+
+    var month = currentDate.getMonth();
+    var date  = currentDate.getDate();
+    var year  = currentDate.getFullYear();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    
+    document.write("&nbsp;" + "&nbsp;"  + "&nbsp;"  + 0 + month + - + date + - + year);
+    document.write("&nbsp;" + "&nbsp;"  + "&nbsp;"  + date + '-' + 0 + month + - + year);
+    document.write("&nbsp;" + "&nbsp;"  + "&nbsp;"  + date + '-' + months[month] + - + year);
+
+    document.write("<br>" + "<br>");
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    document.write("Excercise No 4");
+
+    document.write("<br>" + "<br>");
+
+    let x = 5;
+
+    let y = 6;
+
+    let z = 7;
+
+    let areas = (x + y + z)/2;
+
+    document.write("&nbsp;" + "&nbsp;"  + "&nbsp;"+ "The area of Triangle is " + areas);
+
+    document.write("<br>" + "<br>");
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    document.write("Excercise No 6");
+
+    document.write("<br>" + "<br>");
+
+    var year = 2020;
+
+    let  leapYear = year % 4 == 0 ? "Leap Year" : "Normal Year";
+
+    document.write("&nbsp;" + "&nbsp;"  + "&nbsp;"+ leapYear + "<br>" + "<br>");
+
+
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   
+    document.write("Excercise No 8");
+
+    document.write("<br>" + "<br>");
+
+    let rValue = Math.ceil(Math.random()*10);
+
+    var userValue = document.querySelector("#ex-8").value;;
+
+    function checkNum() {
+        
+     document.write(rValue ==  userValue ? "Good Work" : "Not matched");
+
+    }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    document.write("Excercise No 10");
+
+    document.write("<br>" + "<br>");
+
+    
+    
+    
+    function multiply() {
+        
+        let n1 = document.querySelector("#num1").value;
+        let n2 = document.querySelector("#num2").value;
+      
+        document.querySelector("#ex-10").innerHTML = n1*n2;
+        
+    }
+
+    function divide() {
+        
+        let n1 = document.querySelector("#num1").value;
+        let n2 = document.querySelector("#num2").value;
+      
+        document.querySelector("#ex-10").innerHTML = n1/n2;
+        
+    }
+
+     
+    
+
+
+ </script> 
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  
+    <form action="">
+         
+        <label for="r1">Male</label>
+        <input type="radio" name="gender" id="r1">
+        
+        <label for="r2">Female</label>
+        <input type="radio" name="gender" id="r2">
+    
+
+    </form>
+     
+    <p id="ans"></p>
+
+  <script>
+
+     var x = document.querySelector("#r1").value;
+
+     var y = (x == male)? "Male is selected" : "Female is selected"; 
+     
+     document.write("<br>");
+    
+     
+    var x = 10;
+    
+    var y = ( x == 5) ? "True":"False";
+
+    document.querySelector("#ans").innerHTML = y;
+
+     
+
+  </script>
+
+</body>
+</html>

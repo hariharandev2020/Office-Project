@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array sort</title>
+</head>
+<body>
+    
+
+<P id="ans">  </P>
+
+<!-- <button id="btn" onclick="sorting()"> Click here to Sort </button> -->
+ <script>
+
+    
+
+            var  nums = [39,2,25,10] 
+             
+            for (let i = 0; i < nums.length -1; i++) {
+                 
+                  var min = i;
+
+                for (let j = i + 1 ; j < nums.length; j++) {
+                        
+                    if (nums[j] < nums[min]) {
+                          
+                          min = j;
+                    } 
+                }         
+                    if (min !=i) {
+                        
+                            var ans  = nums[i];
+                            nums[i]  = nums[min];
+                            nums[min]= ans;
+
+                    }
+                           
+            }
+            console.log(nums);
+ 
+
+
+
+
+ </script>
+
+
+
+
+</body>
+</html>

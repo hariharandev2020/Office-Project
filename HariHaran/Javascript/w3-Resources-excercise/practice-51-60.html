@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ex 51-60</title>
+</head>
+
+<body>
+
+
+
+
+        <script>
+
+
+                document.write("Excercise 51" + "<br>" + "<br>");
+
+                function chanNum(a) {
+
+                        let hours = Math.floor(a / 60);
+                        let minutes = (a % 60);
+
+                        return hours + ':' + minutes;
+
+                }
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + chanNum(150) + "<br>" + "<br>");
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 52" + "<br>" + "<br>");
+
+                function alpha(name) {
+
+                        return name.split("").sort().join("");
+
+                }
+
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + alpha("Javascript") + "<br>" + "<br>");
+
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 53" + "<br>" + "<br>");
+
+                function space(str) {
+
+                        return (/a...i/).test(str) || (/i..a/).test(str);
+
+                }
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + space("Javascript") + "<br>" + "<br>");
+
+
+
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 54" + "<br>" + "<br>");
+
+                function vowels(course) {
+
+
+                        v2 = course.replace(/[^aeiou]/g, "").length;
+
+                        return v2;
+
+                }
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + vowels("Hari") + "<br>" + "<br>");
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 55" + "<br>" + "<br>");
+
+
+                function equal(a, b) {
+
+                        if ((/p/).test(a) == (/p/).test(b)) {
+
+                                return true;
+                        }
+                        return false;
+                }
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + equal("pakkoda", "palkova") + "<br>" + "<br>");
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + equal("pakkoda", "halwa") + "<br>" + "<br>");
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 56" + "<br>" + "<br>");
+
+
+                function divi(num1, num2) {
+
+                        var divide = Math.round(num1 / num2).toString();
+
+                        var ans = divide.split("");
+                        
+                        return ans.join(" ,");
+
+                        // alert(ans);
+
+
+                }
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + divi(68, 5) + "<br>" + "<br>");
+                
+//////////// /////// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 57" + "<br>" + "<br>");
+
+                function prt(name,n) {
+
+                        if( n > n ){
+
+                           return false; 
+
+                        }else {
+
+                              return  name.repeat(n);
+                        }
+                }        
+
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + prt("Hari :-", 5) + "<br>" + "<br>");        
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                
+                document.write("Excercise 58" + "<br>" + "<br>");
+
+                     function prt1(name,n) {
+
+                        if( name.length >= 3){
+
+                           return name.substr(-3).repeat(n);  
+
+                        }else {
+
+                        return false
+                        }
+                }            
+
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + prt1("python", 4) + "<br>" + "<br>");        
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + prt1("py", 4) + "<br>" + "<br>");        
+
+
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////      
+                
+                document.write("Excercise 59" + "<br>" + "<br>");
+
+
+                        function leng(name) {
+                                
+                           if( name.length % 2 == 0 );
+                           {
+
+                                return name.slice(0,name.length / 2);
+                           
+                        } 
+                         
+                                return false  
+
+                        }
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + leng("python") + "<br>" + "<br>");        
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + leng("Jav") + "<br>" + "<br>");        
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                 
+                document.write("Excercise 60" + "<br>" + "<br>");        
+                        
+                  function create(course) {
+                          
+                      let  course2 = course.substring(1,course.length-1);
+
+                         return (course2);
+                  }
+                  
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + create("Javascript") + "<br>" + "<br>");        
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       
+       
+       </script>
+
+
+</body>
+
+</html>

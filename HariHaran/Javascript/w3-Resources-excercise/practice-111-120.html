@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex--111-120</title>
+</head>
+<body>
+    
+
+<script>
+
+            document.write("Excercise 111" + "<br>" + "<br>"); 
+
+
+            function sentence(sent){
+
+                 var fl = sent[0];
+                //  alert(fl);
+                 var ll = sent[sent.length-1];
+                //  alert(ll);
+
+                return ( /[A-Z]/.test(fl) && ll == "." ) ? "True" : "False";      
+                
+            }
+    document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ sentence("This tool will help you write better English and efficiently corrects texts.")+ "<br>" + "<br>");                                                                                                                      
+    document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ sentence("this tool will help you write better English and efficiently corrects texts.")+ "<br>" + "<br>");                                                                                                                              
+    document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ sentence("This tool will help you write better English and efficiently corrects texts")+ "<br>" + "<br>");                                                                                                                      
+   
+//..........................................................................................................................................................................................................
+
+            document.write("Excercise 112" + "<br>" + "<br>"); 
+
+            function range(a,b,c){
+
+                if (b >= a && b <=c) {
+                      
+                       return true
+                }
+                    return false;
+            }
+
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ range(1,2,3)+ "<br>" + "<br>");                                                                                                                      
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ range(3,2,3)+ "<br>" + "<br>");                                                                                                                      
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ range(1,2,1)+ "<br>" + "<br>");                                                                                                                      
+
+//..................................................................................................................................................
+
+            document.write("Excercise 113" + "<br>" + "<br>"); 
+
+            function increase(nums){
+
+                // nums = nums.split(" ");
+
+                for (let i = 0; i< nums.length; i++) {
+                      
+                      if (nums[i] < nums[i + 1] )
+                           
+                        return false;
+                        
+                }
+                return true
+
+            }
+
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ increase([1,2,3])+ "<br>" + "<br>");                                                                                                                          
+
+//............................................................................................................................
+
+        document.write("Excercise 114" + "<br>" + "<br>"); 
+
+                function modes(numbers){
+  
+                    for (let i = 0; i < numbers.length -1; i++) {
+                         
+                        let ans;
+
+                        if (numbers[i] + numbers[i + 1] === numbers[i+2] && numbers[i+2] - numbers[i+1] === numbers[i]) {
+                               
+                                   return ans = true; 
+                        } else {
+                            
+                            return ans = false;
+                        }
+
+                    }
+
+                    return ans;
+
+                }
+
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ modes([1,2,3])+ "<br>" + "<br>");                                                                                                                                 
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ modes([1,2,4])+ "<br>" + "<br>");                                                                                                                                     
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ modes([4,2,4])+ "<br>" + "<br>");                                                                                                                                         
+//........................................................................................................................................
+
+             document.write("Excercise 115" + "<br>" + "<br>");           
+
+              function permu(numbers,n){
+
+                var num = numbers.length;
+
+                // alert(numbers);
+
+                if (num == n) {
+                      
+                      return true;
+                }
+                 else { 
+                     return false;   
+                 }
+            
+              }
+
+    document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ permu([4,2,4],3 )+ "<br>" + "<br>");                                                                                                                                         
+
+    document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ permu([4,2,4,5], 3 )+ "<br>" + "<br>");                                                                                                                                         
+//...................................................................................................................................................
+
+
+    document.write("Excercise 116" + "<br>" + "<br>");           
+                
+
+        function maxstr(str){
+
+           var max = str[0].length;
+           var ans = str[0];
+
+           for(i = 0; i < str.length; i++) {
+
+                var maxi = str[i].length;
+
+                if (maxi > max) {
+
+                    ans = str[i];
+                    max = maxi;
+                    
+                }
+
+           }
+           
+           return ans;
+        }  
+
+
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ maxstr(["aa", "ab","abc"], 3 )+ "<br>" + "<br>");                                                                                                                                         
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ maxstr(["aa", "abcd","abc"], 3 )+ "<br>" + "<br>");                                                                                                                                         
+
+//..................................................................................................................................................
+
+            document.write("Excercise 117" + "<br>" + "<br>");           
+
+                function largestEven(numbers){
+
+                        numbers.sort( (x,y) => y-x);
+
+                        for(i=0; i <numbers.length; i++ ){
+
+                            if (numbers[i] % 2 ===0) {
+                                 
+                                 return numbers[i]
+                            }
+                        }
+
+                }
+
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ largestEven(["20", "66","888"], 3 )+ "<br>" + "<br>");                                                                                                                                         
+
+//..............................................................................................................................................................
+
+            document.write("Excercise 118" + "<br>" + "<br>");
+
+                function nearestNum(x){
+
+                    while(x % 10){
+
+                        x++;
+                    }
+                   return x;
+
+                }
+
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ nearestNum(66)+ "<br>" + "<br>");                                                                                                                                                      
+
+
+//................................................................................................................................................................
+
+            document.write("Excercise 119" + "<br>" + "<br>");
+
+
+                function evenDigits(nums){
+
+                    var ans = 0;
+
+                    while (nums){
+
+                        ans += nums % 2 === 0;
+                        nums = Math.floor(nums/10);
+                    }
+
+                    return ans;
+                }
+
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ evenDigits(25786)+ "<br>" + "<br>");                                                                                                                                                              
+
+ ///.............................................................................................................................................
+ 
+                document.write("Excercise 120" + "<br>" + "<br>");
+
+                    function franction(nums){
+
+                         return  Math.abs(nums[0] / nums[1] < 1) ? "Proper Franction" : "Improper Franction";  
+
+                    }
+
+                document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ franction([2,5])+ "<br>" + "<br>");                                                                                                                                                               
+                document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ franction([4,2])+ "<br>" + "<br>");
+
+
+
+
+</script>
+
+</body>
+</html>

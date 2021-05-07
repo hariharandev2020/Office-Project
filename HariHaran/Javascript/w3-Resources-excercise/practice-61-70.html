@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 61-70</title>
+</head>
+<body>
+    
+
+<script>
+
+        document.write("Excercise 61" + "<br>" + "<br>");        
+
+            function conc(name1,name2) {
+                
+              return  name1.substring(1,) + name2.substring(1);
+                 
+            }
+            document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + conc("python","javascript") + "<br>" + "<br>");        
+           
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            
+            document.write("Excercise 62" + "<br>" + "<br>");
+
+                function change(name) {
+                    
+                     if ( name.length >= 3) {
+                    
+                        var  name1 = name.substring(name.length-3) + name.slice(0,-3);
+                          
+                         return name1;  
+                     
+                        }else{
+                         return false;
+                     }
+                     
+                }
+                
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + change("javasccript") + "<br>" + "<br>");        
+            
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            document.write("Excercise 63" + "<br>" + "<br>");     
+
+                function strch(word){
+                    
+                    if (word.length % 2 != 0) {
+
+                     mid = (word.length +1)/2;
+                    return word.slice(mid -2, mid + 1);
+                 }      
+                  else{        
+
+                return word;
+                }    
+            }    
+            document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + strch("javasccript") + "<br>" + "<br>");            
+            document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + strch("HTML") + "<br>" + "<br>");            
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            document.write("Excercise 64" + "<br>" + "<br>");     
+
+
+                 function constr(name1,name2){
+
+                     const  min = Math.min(name1.length,name2.length);
+
+                       return name1.substring(name1.length - min) + name2.substring(name2.length - min);
+
+                    }
+                    
+                    document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + constr("python","Javascript") + "<br>" + "<br>");            
+                   
+        
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 65" + "<br>" + "<br>");         
+
+                    function strLast(str){
+
+                        if ( (str.length >= 6) && (str.substring(str.length -6) === "script") ) {
+                            
+                            return true;
+
+                        } else {
+                            
+                            return false;
+                        }
+
+                    }
+            
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + strLast("Javascript") + "<br>" + "<br>");                
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + strLast("Java script") + "<br>" + "<br>");              
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + strLast("Java scripts") + "<br>" + "<br>");                  
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                document.write("Excercise 66" + "<br>" + "<br>");                
+
+                        function strSearch(name){
+                            
+                            if (name.substring(0,3) === "New" ) {
+                                
+                                return name;
+
+                            }
+                             return "Name Not matched";
+
+                        }
+                     document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + strSearch("New york") + "<br>" + "<br>");                        
+                     document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + strSearch("Javascript") + "<br>" + "<br>");            
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+                document.write("Excercise 67" + "<br>" + "<br>");                            
+
+                      function rm(str){
+
+                           if ( str.charAt(0) === "P" && str.charAt(str.length -1) === "P") {
+                                
+                                return(str.slice(1,-1) );
+
+                           } else{
+
+                                return str;
+                           
+                            }
+
+                      }  
+
+                     document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + rm("PHP") + "<br>" + "<br>");                        
+                     document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + rm("PHYTHONP") + "<br>" + "<br>");                        
+                     document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + rm("Javascript") + "<br>" + "<br>");                  
+
+// ..................................................................................................................................................................
+
+                document.write("Excercise 68" + "<br>" + "<br>");                            
+
+                      function valueChange(name,n){
+
+                           return name.slice(0,n) + name.slice(name.length -n);     
+
+                      }
+                    document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + valueChange("Javascript",2) + "<br>" + "<br>");                              
+
+//...................................................................................................................................................................
+
+                document.write("Excercise 69" + "<br>" + "<br>");                                  
+
+                      function sum(numbers) {
+                          
+                        return numbers[0]+numbers[1]+numbers[2]+numbers[3];
+
+                      }
+
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + sum([25,20,15,20]) + "<br>" + "<br>");                                     
+
+//........................................................................................................................................
+
+
+                document.write("Excercise 70" + "<br>" + "<br>");                                  
+
+                      function rotate(nums) {
+                          
+                         
+                         return  [ nums[1], nums[2], nums[0]];
+
+                      }
+
+                document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + rotate([1,2,3]) + "<br>" + "<br>");                                     
+ //............................................................................................................................................
+                 
+                
+                      
+
+
+
+
+</script>
+
+
+</removetml>

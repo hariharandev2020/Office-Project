@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+  
+   <style>
+
+        #box{
+
+           margin: 0px auto; 
+           height: 50px;
+           width : 200px;
+           border: 1px solid black;
+           
+
+        }
+        #box-1{
+
+            height: 100%;
+            width: 200px;
+            background-color: aqua;
+
+        }
+        .buttons{
+                     
+            margin: 0px 42%;
+            margin-right: 0;
+            display: inline;
+
+        }
+        .buttons button{
+        
+            background-color: cornsilk;
+        
+        }
+
+
+
+
+
+   </style>
+
+<body>
+    
+
+      <div id="box">
+
+            <div id="box-1">
+
+
+
+
+            </div>
+
+
+
+      </div>
+       <br><br>
+
+
+      <div class="buttons">
+         
+            <button id="btn1" onclick="attacking()"> Attack</button>
+            
+            <button id="btn2" onclick="strongAttack()"> Strong Attack</button>
+            
+            <button id="btn3" onclick="healing()"> Heal </button>
+
+
+      </div>
+
+    <script>
+
+
+        var maxLife = document.querySelector("#box-1").style.width;
+
+        var currentLife =  10;
+        var s_attack = 20;
+        // alert(maxLife);
+
+        function attacking(){
+
+            maxLife -=  currentLife;  
+
+        }
+        function strongAttack(){
+
+            maxLife -= s_attack;
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

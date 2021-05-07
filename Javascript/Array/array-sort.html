@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  
+    <button onclick="mySort()" ondblclick="reverse()"> Sort </button>
+    
+    <p id="ans"> </p>
+
+    <script>
+          
+          document.write("Array Sort");
+          document.write("<br>");
+          document.write("<br>");
+
+          var  batch1 = ["Sakthi","Vinoth","Hari","Vishnu","Murali"];
+          
+          document.querySelector("#ans").innerHTML = batch1;
+          
+          function mySort(){
+
+             batch1.sort();
+             document.querySelector("#ans").innerHTML = batch1;
+
+          }
+
+          document.querySelector("#ans").innerHTML = batch1;
+
+          function reverse(){
+              
+             batch1.reverse();
+             document.querySelector("#ans").innerHTML = batch1;
+          }
+
+          
+          document.write("<br>");
+          document.write("<hr>");
+          
+         
+          document.write("<br>"+"<hr>");
+          var y, marks =  [60,80,40,49];
+
+          y = marks.sort();
+
+          document.write(y);
+
+          document.write("<br>"+"<hr>");
+
+          y = marks.reverse();
+          document.write(y);
+
+          document.write("<br>"+"<hr>");
+         
+
+
+    </script>
+
+</body>
+</html>

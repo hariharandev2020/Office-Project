@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication Table</title>
+  <style>
+    
+     input{
+         
+         width: 150px;
+         height:30px;
+         display: block;
+         margin: 20px 20px;
+         text-align:center;
+         border: 1px solid lightblue;
+
+     }
+    input:hover{
+      background-color: #E5E7E7;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px grey;
+      outline: none;
+      border: 1px solid black;
+    
+    }
+    button{
+      margin: 0px 50px;
+      padding: 5px 10px;
+      background-color: red;  
+      color: white;
+      font-weight: bold;
+    }
+    button:hover{
+      background-color: #F73B3F;
+    }
+    p{
+      text-align: center;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+    
+    <input type="number" id="num" value="" min="1" max="10">    
+    <button onclick="myClick()">SUBMIT</button>
+    <p id="output"></p>
+
+    <script>
+    	  
+    	  function myClick()
+    	   {          
+       	  var table = "";
+          var n = document.querySelector("#num").value;
+          var i ;
+          
+        for ( i = 1; i <= 10; i++) {
+            
+              table += i + "x" + n +  "=" + i*n + "<hr>"
+            
+            if ( n < 1 ) {
+
+              return alert("Please enter a number in the range of   1-10")
+            }else if (n>10){
+
+               return alert("Please enter a number in the range of   1-10")
+            }
+          
+          }  // console.log(table);
+             document.querySelector("#output").innerHTML = table; 
+          }
+    </script>
+
+
+</body>
+</html>

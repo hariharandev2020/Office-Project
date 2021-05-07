@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX:- 71-80</title>
+</head>
+<body>
+    
+<script>
+
+        document.write("Excercise 71" + "<br>" + "<br>");                                       
+
+                function check(nums) {
+                    
+                    if ( nums.length >= 1 && nums[0] === 1 && nums[nums.length -1] === 1) {
+                        
+                            return true
+
+                    } else {
+
+                        return false
+                    }
+
+                }
+         document.write("&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + check([1,2,1]) + "<br>" + "<br>");                                             
+
+//..........................................................................................................................................
+
+        document.write("Excercise 72" + "<br>" + "<br>"); 
+        
+                function flcheck(nums) {
+                    
+                    if (nums[0] == nums[nums.length -1]) {
+                        
+                         return true;
+                    } else{
+
+                        return false;
+                    }
+
+                }
+
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+  flcheck([60,20,60]) + "<br>" + "<br>");        
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+  flcheck([60,20,10]) + "<br>" + "<br>");       
+//........................................................................................................................
+
+    document.write("Excercise 73" + "<br>" + "<br>");             
+
+                    
+                    let nums = [40,30,20];
+
+                    for (let i = 2; i >= 0  ; i--) {
+                          
+                        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ nums[i] + "<br>" + "<br>");                                             
+                        
+                    }
+                
+//...........................................................................................................................
+
+    document.write("Excercise 74" + "<br>" + "<br>");                             
+
+            
+
+            function numrep(nums) {
+                
+            
+            
+            var maxNum = nums[0] > nums[2] ? nums[0] : nums[2];
+            
+               nums[0] = maxNum;
+               nums[1] = maxNum;
+               nums[2] = maxNum;
+           
+            return nums;      
+        
+        }
+
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ numrep([30,40,10]) + "<br>" + "<br>");                                                     
+
+//........................................................................................................................
+        
+        document.write("Excercise 75" + "<br>" + "<br>");                                                     
+        
+            
+            a = [30,20,10];
+            b = [30,10,10];
+ 
+            c = [a[1],b[1]];             
+
+        // document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ middle([30,20,10],[30,10,10]) + "<br>" + "<br>");                                                             
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ c + "<br>" + "<br>");                                                                 
+//..............................................................................................................................
+
+        document.write("Excercise 76" + "<br>" + "<br>");                                                     
+
+                var a = [2,3,4] ;
+                var b,c;   
+            
+                c = (a.length > 1)? b = [a[0],a[a.length -1]] : " False"
+                  
+                         
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ c + "<br>" + "<br>");                                                                 
+        
+ //.........................................................................................................................
+ 
+        document.write("Excercise 77" + "<br>" + "<br>");                                                     
+
+            
+               var arr = [1,5];
+
+                let arr2 = ( (arr.length == 2) && (arr[0] == 1)) ? "True" : "False" ; 
+                          
+        
+            document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ arr2 + "<br>" + "<br>");                                                                         
+//..............................................................................................................................
+
+
+        document.write("Excercise 78" + "<br>" + "<br>");                                                     
+
+        var arr = [1,5];
+        
+
+         arr2 = ( (arr.length == 2) && arr != 1 || 3 ) ? "True" : "False"; 
+          
+
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ arr2 + "<br>" + "<br>");                                                                         
+         
+//...............................................................................................................................
+
+        document.write("Excercise 79" + "<br>" + "<br>");                                                     
+
+            function twise(nums) {
+                
+                if (( nums[0] === 30 || nums[0] === 40 )||(nums[1] === 30 || nums[1] === 40) ) {
+
+                     return true;
+
+                }else{
+
+                    return false;
+                }
+
+            }
+
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ twise([30,40]) + "<br>" + "<br>");                                                                             
+        document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ twise([20,10]) + "<br>" + "<br>");                                                                             
+//............................................................................................................................
+
+        document.write("Excercise 80" + "<br>" + "<br>");                                                     
+
+         var numbers = [5,6,4];
+
+         var numbers  = [numbers[numbers.length -1] [numbers,numbers[0]]];
+
+         document.write( "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;"+ numbers2 + "<br>" + "<br>");                                
+
+//..............................................................................................................................
+
+</script>
+
+
+</body>
+</html>
