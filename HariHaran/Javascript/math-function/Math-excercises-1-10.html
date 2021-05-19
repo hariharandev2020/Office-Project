@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        document.write("Excercise 1" + "<br>" + "<br>");
+
+        function ran(x){
+
+        var z = Math.floor(Math.random() * x);
+            
+        return z;
+        
+    }
+
+
+        document.write(ran(4) + "<br>");
+        document.write(ran(5) + "<br>");
+        document.write(ran(10)+ "<br>");
+
+//...........................................................................................        
+
+        document.write("Excercise 2" + "<br>" + "<br>");
+
+            var num = Math.max(4,34,5,65,78);
+            
+        document.write( num + "<br>");
+
+//.......................................................................................................
+
+        document.write("Excercise 2" + "<br>" + "<br>");
+
+        function gcd(x,y){
+
+
+            if( (typeof x !== "number") || (typeof y !== "number") )
+
+                return false;
+            x = Math.abs(x);
+            y = Math.abs(y);
+            
+            while(y) {
+
+                var t = y;
+                y = x % y;
+                x = t;
+            }
+             return x;
+
+        } 
+        
+        document.write( gcd(12,13) + "<br>");
+
+//.................................................................................................
+
+        document.write("Excercise 2" + "<br>" + "<br>");
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
