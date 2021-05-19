@@ -1,0 +1,187 @@
+/* Billing Software css */
+
+*{
+
+
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+
+}
+.container{
+
+    width: 100%;
+    height: 620px;
+    /* background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);; */
+    background-image: url(../images/bg.jpg);
+    /* display: flex; */
+    padding: 20px;
+    opacity: 0.8;
+}
+.header{
+
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+#head{
+
+    font-size: 2.6rem;
+    animation: right 30s  ease-in-out infinite;
+    background-image: linear-gradient(-60deg, #abecd6 40%, #fbed96 100%);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 20px;
+
+}
+@keyframes right {
+    
+    0%{
+        background-position: 0-50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+}
+.main{
+
+    display: flex;
+    height: 80%;
+}
+
+form{
+
+    flex-grow: 1;
+    line-height: 2;
+}
+form h2{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.content{
+
+    flex-grow: 3;
+    display: flex;
+}
+.content-head{
+
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+}
+label{
+
+    font-size: 1.4rem;
+    padding: 10px;
+    padding-left: 0px;
+    font-weight: bolder;
+}
+input{
+
+    width: 160px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #e3e3e3;
+    font-size: 1.2rem;
+    outline: none;
+    margin:10px 20px;
+    
+}
+input:hover{
+
+    outline: thistle;
+    border-radius: 5px;
+    transition: 500ms;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+
+}
+#submit{
+    margin-left: 10%;
+    width: 100px;
+    height: 30px;
+    border: 1px solid grey;
+    background-color: yellowgreen;
+    font-weight: bolder;
+}
+.content-1{
+    
+    flex-grow: 1;
+    
+}
+.content-2{
+
+    flex-grow: 1.5;
+   
+}
+#content-2-header{
+
+    width: 100%;
+    border: 1px solid white;
+}
+#content-1-header-1 {
+
+    height: 30px;
+    width: 100%;
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#content-1-header-1 p{
+
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.content-1-main{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+.column{
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+.column h1{
+
+    font-size: 1.4rem;
+}
+.colm-2{
+    flex-grow: 2;
+}
+.table-head{
+
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+
+}
+.table-content{
+
+    width: 100%;
+    /* height: 50px; */
+    border-top:0px;
+}
+ul li{
+
+    padding: 20px;
+    color: black;
+    font-size: 1.3rem;
+    list-style-type: none;
+    background-color: whitesmoke;
+}
+ 
