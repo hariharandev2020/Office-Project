@@ -39,27 +39,27 @@
 
             <label for="cname">Customer Name :</label> 
             <br>
-            <input type="text"  id="cname"   pattern="/[a-zA-Z]/+" title="Invalid input" required>
+            <input type="text"  id="cname"   required>
             <br>
 
             <label for="pcode">Product Code :</label>
             <br>
-            <input type="text"  id="pcode"    pattern="[0-9]+" title="Invalid input" required>
+            <input type="number"  id="pcode"  min="1Fqty"   required>
             <br>
 
             <label for="pname">Product Name :</label>
             <br>
-            <input type="text"  id="pname"   pattern="[a-zA-Z]+" title="Invalid input" required>
+            <input type="text"  id="pname"     required>
             <br>
 
             <label for="qty">Quantity :</label>
             <br>
-            <input type="text"  id="qty"   pattern="[0-9]+" title="Invalid input" required>
+            <input type="number"  id="qty"  min="1"  required>
             <br>
 
             <label for="ppu">Price per unit :</label>
             <br>
-            <input type="text"  id="ppu"   pattern="[0-9]+" title="Invalid input" required>
+            <input type="number"  id="ppu"  min="1"  required>
             <br><br>
         
             <input type="button" id="submit"  onclick="add()" value="ADD">
@@ -85,7 +85,7 @@
 
                         <div class="table-head">
 
-                            <h1> P.Code </h1>
+                            <h1> Code </h1>
 
                         </div>     
 

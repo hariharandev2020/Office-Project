@@ -153,8 +153,7 @@ input:hover{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    background-color: whitesmoke;
+    
 }
 .column h1{
 
@@ -167,13 +166,13 @@ input:hover{
 
     padding: 10px 20px;
     text-align: center;
-    border-bottom: 1px solid black;
+    background-color: #3c4242;
+    color: white;
 
 }
 .table-content{
 
     width: 100%;
-    /* height: 50px; */
     border-top:0px;
 }
 ul li{
@@ -181,7 +180,9 @@ ul li{
     padding: 20px;
     color: black;
     font-size: 1.3rem;
+    font-weight: 500;
     list-style-type: none;
     background-color: whitesmoke;
+    text-align: center;
 }
  
