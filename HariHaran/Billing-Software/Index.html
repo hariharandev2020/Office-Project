@@ -59,7 +59,12 @@
 
             <label for="ppu">Price per unit :</label>
             <br>
-            <input type="number"  id="ppu"  min="1"  required>
+            <input type="number"  id="ppu"  min="1" oninput="totalPrice()" required>
+            <br>
+
+            <label for="ppu">Amount  :</label>
+            <br>
+            <input type="text"  id="amt"   min="1"  readonly>
             <br><br>
         
             <input type="button" id="submit"  onclick="add()" value="ADD">
@@ -160,7 +165,17 @@
                     <!-- content-1-main -->
                 </div>
 
-            
+                    <div class="table-total">
+
+                            <span id="total-text"> Total : </span>
+
+                            <span id="total-value">   </span>
+                    </div>
+
+                    <input type="button" value="Total" id="btn">
+
+                            <span  >  </span>
+
                     <!-- content-1 div -->
                 </div>
 
