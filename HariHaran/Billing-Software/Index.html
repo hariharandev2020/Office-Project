@@ -34,32 +34,32 @@
 
         <form action="">
 
-            <h2 >Billing Details</h2>
+            <h2 >Enter Billing Details</h2>
             <br>   
 
             <label for="cname">Customer Name :</label> 
             <br>
-            <input type="text"  id="cname"   required>
+            <input type="text"  id="cname" >
             <br>
 
             <label for="pcode">Product Code :</label>
             <br>
-            <input type="number"  id="pcode"  min="1Fqty"   required>
+            <input type="number"  id="pcode"  min="1Fqty"   >
             <br>
 
             <label for="pname">Product Name :</label>
             <br>
-            <input type="text"  id="pname"     required>
+            <input type="text"  id="pname"   >
             <br>
 
             <label for="qty">Quantity :</label>
             <br>
-            <input type="number"  id="qty"  min="1"  required>
+            <input type="number"  id="qty"  min="1"  >
             <br>
 
             <label for="ppu">Price per unit :</label>
             <br>
-            <input type="number"  id="ppu"  min="1" oninput="totalPrice()" required>
+            <input type="number"  id="ppu"  min="1" oninput="totalPrice()" >
             <br>
 
             <label for="ppu">Amount  :</label>
@@ -67,7 +67,7 @@
             <input type="text"  id="amt"   min="1"  readonly>
             <br><br>
         
-            <input type="button" id="submit"  onclick="add()" value="ADD">
+            <input type="button" id="submit"  onclick="add()" value="Add cart">
        
              <!-- form closing -->
         </form>
@@ -75,14 +75,6 @@
         <div class="content">                          
 
               <div class="content-1"> 
-
-                <header id="content-1-header-1">
-
-                    <p id="cusid"> </p>
-                    <p id="cusname"> </p>
-        
-                <!-- header -->
-                </header>
             
                 <div class="content-1-main">
 
@@ -90,7 +82,7 @@
 
                         <div class="table-head">
 
-                            <h1> Code </h1>
+                            <h1> Items </h1>
 
                         </div>     
 
@@ -114,7 +106,7 @@
 
                         <div class="table-head">
 
-                            <h1> Items </h1>
+                            <h1> Qty </h1>
 
                         </div> 
 
@@ -132,10 +124,97 @@
 
                         <div class="table-head">
 
-                            <h1> Qty </h1>
+                            <h1> Amount </h1>
 
                         </div> 
                         <ul class="row-3">
+
+                                
+
+                            <!-- row-1 -->
+                        </ul>
+
+                            <!-- col-3 -->
+                    </div>
+
+
+                    <!-- content-1-main -->
+                </div>     
+
+                <div class="edit-option"> 
+
+                       <input type="number" min="0" class="edit-input" id="edit-option" value="0" > 
+                       <input type="button" value="Remove" class="edit-input" onclick="remove() ">
+
+                </div>
+                            
+                    </div>
+
+                    <!-- content-1 div -->
+                </div>
+
+              <div class="content-2">
+
+                <header id="content-2-header-1">
+
+                    <p id="cusid"> </p>
+                    <p id="cusname"> </p>
+        
+                <!-- header -->
+                </header>
+            
+                <div class="content-1-main">
+
+                    <div class="column colm-1">
+
+                        <div class="table-head">
+
+                            <h1> Code </h1>
+
+                        </div>     
+
+                        <div class="table-content">
+
+                            <ul class="row-5">
+
+
+
+                                <!--  row-1 ul -->
+                            </ul>
+
+
+
+                        </div>
+
+                            <!-- col-1 div -->
+                    </div>
+
+                    <div class="column colm-2">
+
+                        <div class="table-head">
+
+                            <h1> Items </h1>
+
+                        </div> 
+
+                        <ul class="row-6">
+
+                                
+
+
+                        </ul>
+
+                        <!-- col-2 -->
+                    </div>    
+
+                    <div class="column colm-3">
+
+                        <div class="table-head">
+
+                            <h1> Qty </h1>
+
+                        </div> 
+                        <ul class="row-7">
 
                                 
 
@@ -152,7 +231,7 @@
                             <h1>Amount </h1>
 
                         </div> 
-                        <ul class="row-4">
+                        <ul class="row-8">
 
                                 
 
@@ -164,22 +243,33 @@
 
                     <!-- content-1-main -->
                 </div>
-
+    
                     <div class="table-total">
 
-                            <span id="total-text"> Total : </span>
-
-                            <span id="total-value">   </span>
+                        <input type="button" value="Submit"     id="btn" onclick="gstCalc()" style="color: rgb(41, 248, 41);" >
+     
                     </div>
 
-                    <input type="button" value="Total" id="btn">
+                    <div class="table-total-2">
 
-                            <span  >  </span>
+                        <div class="table-total-3" id="subtotal"> 
+                           
+                            <span id="total-text" >  Total  : </span> <span id = "total-value" ></span>  
 
-                    <!-- content-1 div -->
-                </div>
+                        </div> 
+                        <div class="table-total-3" id="subtotal"> 
+                           
+                            <span id="total-text"> Gst 12%  : </span><span id = "gst-text"  ></span>
 
-              <div class="content-2">
+                        </div> 
+
+                        <div class="table-total-3" id="subtotal"> 
+                           
+                            <span id="total-text"> Grand Total  :</span>   <span id = "gt-text" ></span> 
+
+                        </div>                        
+
+                    </div>
 
 
                 <!-- content 2 div-->
