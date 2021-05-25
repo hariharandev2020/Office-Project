@@ -27,7 +27,6 @@
             <!-- Header div -->
         </div>
         <br>
-        <br>
 
         <div class="main">
         
@@ -44,7 +43,7 @@
 
             <label for="pcode">Product Code :</label>
             <br>
-            <input type="number"  id="pcode"  min="1Fqty"   >
+            <input type="number"  id="pcode"  min="1"   >
             <br>
 
             <label for="pname">Product Name :</label>
@@ -72,88 +71,9 @@
              <!-- form closing -->
         </form>
 
-        <div class="content">                          
-
-              <div class="content-1"> 
-            
-                <div class="content-1-main">
-
-                    <div class="column colm-1">
-
-                        <div class="table-head">
-
-                            <h1> Items </h1>
-
-                        </div>     
-
-                        <div class="table-content">
-
-                            <ul class="row-1">
-
-
-
-                                <!--  row-1 ul -->
-                            </ul>
-
-
-
-                        </div>
-
-                            <!-- col-1 div -->
-                    </div>
-
-                    <div class="column colm-2">
-
-                        <div class="table-head">
-
-                            <h1> Qty </h1>
-
-                        </div> 
-
-                        <ul class="row-2">
-
-                                
-
-
-                        </ul>
-
-                        <!-- col-2 -->
-                    </div>    
-
-                    <div class="column colm-3">
-
-                        <div class="table-head">
-
-                            <h1> Amount </h1>
-
-                        </div> 
-                        <ul class="row-3">
-
-                                
-
-                            <!-- row-1 -->
-                        </ul>
-
-                            <!-- col-3 -->
-                    </div>
-
-
-                    <!-- content-1-main -->
-                </div>     
-
-                <div class="edit-option"> 
-
-                       <input type="number" min="0" class="edit-input" id="edit-option" value="0" > 
-                       <input type="button" value="Remove" class="edit-input" onclick="remove() ">
-
-                </div>
-                            
-                    </div>
-
-                    <!-- content-1 div -->
-                </div>
-
-              <div class="content-2">
+        <div class="content">                                                  
+           
+              <div class="content-1">
 
                 <header id="content-2-header-1">
 
@@ -167,24 +87,26 @@
 
                     <div class="column colm-1">
 
-                        <div class="table-head">
+                        <!-- <div class="table-head">
 
-                            <h1> Code </h1>
+                            <h1> S.No </h1>
 
-                        </div>     
+                        </div>      -->
 
-                        <div class="table-content">
+                    <div class="table-content">
 
-                            <ul class="row-5">
+        
+                            
+                                <ul class="row-1">
 
 
 
                                 <!--  row-1 ul -->
                             </ul>
 
+                        
 
-
-                        </div>
+                     </div>
 
                             <!-- col-1 div -->
                     </div>
@@ -193,17 +115,20 @@
 
                         <div class="table-head">
 
-                            <h1> Items </h1>
+                            <h1> Product Code </h1>
 
                         </div> 
 
-                        <ul class="row-6">
+                      
+                       
+                        <ul class="row-2">
 
                                 
 
 
                         </ul>
-
+                     
+                     
                         <!-- col-2 -->
                     </div>    
 
@@ -211,27 +136,30 @@
 
                         <div class="table-head">
 
-                            <h1> Qty </h1>
+                            <h1> Product Name </h1>
 
                         </div> 
-                        <ul class="row-7">
+                       
+                    
+                     
+                       <ul class="row-3">
 
                                 
 
                             <!-- row-1 -->
                         </ul>
 
-                            <!-- col-3 -->
-                    </div>
+                          <!-- col-3 -->
+                </div>
 
                     <div class="column colm-4">
 
                         <div class="table-head">
 
-                            <h1>Amount </h1>
+                            <h1> Qty </h1>
 
                         </div> 
-                        <ul class="row-8">
+                        <ul class="row-4">
 
                                 
 
@@ -241,12 +169,50 @@
                         <!-- col-4 -->
                     </div>
 
-                    <!-- content-1-main -->
-                </div>
-    
+            
+
+
+                 <div class="column colm-5">
+
+                    <div class="table-head">
+
+                        <h1> Price(Unit) </h1>
+
+                    </div> 
+                    <ul class="row-5">
+
+                            
+
+
+                    </ul>
+
+                    <!-- col-5 -->
+                 </div>
+
+                 <div class="column colm-6">
+
+                    <div class="table-head">
+
+                        <h1> Total </h1>
+
+                    </div> 
+                    <ul class="row-6">
+
+                            
+
+
+                    </ul>
+
+                 
+                    <!-- col-6 -->
+                 </div>
+
+                 
+
+            </div>
                     <div class="table-total">
 
-                        <input type="button" value="Submit"     id="btn" onclick="gstCalc()" style="color: rgb(41, 248, 41);" >
+            
      
                     </div>
 
@@ -271,11 +237,17 @@
 
                     </div>
 
-
-                <!-- content 2 div-->
+                    <div class="edit-option"> 
+                            
+                        <input type="button" value="Remove" class="edit-input e1" onclick="remove() ">
+                        <input type="number" min="0" class="edit-input e2" id="edit-option" value="0" > 
+                        <input type="button" value="Edit" class="edit-input e3" onclick="edit() ">
+            
+                    </div>
+                <!-- content 1 div-->
               </div>
 
-
+             
                 <!--Main  div-->
         </div>
 
