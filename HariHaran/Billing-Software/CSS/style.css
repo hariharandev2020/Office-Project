@@ -283,12 +283,12 @@ ul li{
             font-size: 1rem;
         }
         .table-total-3 {
-            width: 200px;
+            width: 150px;
             display: flex;
             color: white;
             background-color: lightgrey;
             justify-content: space-around;
-            transform: translate(110%, 38px);
+            transform: translate(105%, 38px);
         }
         .content{
 
@@ -336,6 +336,7 @@ ul li{
     .table-total-3{
 
         width: 150px;
+        transform: translate(88%,20px);
     }
     #total-text{
 
