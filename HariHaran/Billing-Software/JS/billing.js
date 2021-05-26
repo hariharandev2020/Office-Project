@@ -127,6 +127,7 @@ function add(){
 
    function remove(){
         var r = document.querySelector("#edit-option").value;
+        var x = r-1;
         var a = document.querySelector(".row-2").querySelectorAll(["li"]);
         // alert(a.length);
         var b = document.querySelector(".row-3").querySelectorAll(["li"]);
@@ -138,11 +139,11 @@ function add(){
         var e = document.querySelector(".row-6").querySelectorAll(["li"]);
         // alert(e.length);
        
-         a[r].remove();
-         b[r].remove();
-         c[r].remove();
-         d[r].remove();
-         e[r].remove();
+         a[x].remove();
+         b[x].remove();
+         c[x].remove();
+         d[x].remove();
+         e[x].remove();
       
           gstCalc();
    }
@@ -150,6 +151,7 @@ function add(){
    function edit(){
 
     var r = document.querySelector("#edit-option").value;
+    var x = r-1;
     var a = document.querySelector(".row-2").querySelectorAll(["li"]);
     var b = document.querySelector(".row-3").querySelectorAll(["li"]);
     var c = document.querySelector(".row-4").querySelectorAll(["li"]);
@@ -157,17 +159,17 @@ function add(){
     var e = document.querySelector(".row-6").querySelectorAll(["li"]);
 
     
-    document.querySelector("#pcode").value = a[r].textContent;
-    document.querySelector("#pname").value = b[r].textContent;
-    document.querySelector("#qty").value = c[r].textContent;
-    document.querySelector("#ppu").value = d[r].textContent;
-    document.querySelector("#amt").value = e[r].textContent;
+    document.querySelector("#pcode").value = a[x].textContent;
+    document.querySelector("#pname").value = b[x].textContent;
+    document.querySelector("#qty").value = c[x].textContent;
+    document.querySelector("#ppu").value = d[x].textContent;
+    document.querySelector("#amt").value = e[x].textContent;
 
-    a[r].remove();
-    b[r].remove();
-    c[r].remove();
-    d[r].remove();
-    e[r].remove();
+    a[x].remove();
+    b[x].remove();
+    c[x].remove();
+    d[x].remove();
+    e[x].remove();
 
 
    }
