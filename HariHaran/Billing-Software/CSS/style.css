@@ -261,6 +261,12 @@ ul li{
     width: 45px;
 }
 
+@media only screen and (max-width:900px){
+
+
+    
+}
+
 @media only screen and (max-width:500px){
 
 

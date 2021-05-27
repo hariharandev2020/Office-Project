@@ -60,14 +60,14 @@ function add(){
     document.querySelector("#cusname").innerHTML =   "Customer Name :" + " " + customerName;
     document.querySelector("#content-2-header-1").style.backgroundColor = "white";
         
-    // cart
-    // let f = 0;
-    // let n =a+1;
-    // let sn = document.createTextNode(n);
-    //  a = n;    
-    // var li  = document.createElement("li");
-    // li.appendChild(n);
-    // document.querySelector(".row-1").appendChild(li);
+    cart
+    
+    for (i = 0;i<i.length;i++)
+    let sn = document.createTextNode(n);
+     a = n;    
+    var li  = document.createElement("li");
+    li.appendChild(n);
+    document.querySelector(".row-1").appendChild(li);
 
     //.............................................................
 
