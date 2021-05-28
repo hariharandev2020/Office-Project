@@ -60,15 +60,6 @@ function add(){
     document.querySelector("#cusname").innerHTML =   "Customer Name :" + " " + customerName;
     document.querySelector("#content-2-header-1").style.backgroundColor = "white";
         
-    cart
-    
-    for (i = 0;i<i.length;i++)
-    let sn = document.createTextNode(n);
-     a = n;    
-    var li  = document.createElement("li");
-    li.appendChild(n);
-    document.querySelector(".row-1").appendChild(li);
-
     //.............................................................
 
      let text = document.createTextNode(productCode);
@@ -102,62 +93,24 @@ function add(){
      var li    = document.createElement("li");
      li.appendChild(text4);
      document.querySelector(".row-6").appendChild(li).setAttribute("class","total-amount");
-
-    //...........................................................................
     
-    
-     //................................................................
-      //Adding Total 
-
-        
- //...............................................................................
-
-    productName  = document.querySelector("#pname").value = ' ' ;
-    productCode  = document.querySelector("#pcode").value = ' ' ;
-    unitPrice    = document.querySelector("#ppu").value   = ' ' ;
-    quantity     = document.querySelector("#qty").value   = ' ' ;
-    amount       = document.querySelector("#amt").value   = ' ' ;
-
-    //.................................................. 
-        gstCalc();
+     clearInput();    
+     gstCalc();
 
 }  
     //Removing Item
 
-
    function remove(){
-        var r = document.querySelector("#edit-option").value;
-        var x = r-1;
-        var a = document.querySelector(".row-2").querySelectorAll(["li"]);
-        // alert(a.length);
-        var b = document.querySelector(".row-3").querySelectorAll(["li"]);
-        // alert(b.length);
-        var c = document.querySelector(".row-4").querySelectorAll(["li"]);
-        // alert(c.length);
-        var d = document.querySelector(".row-5").querySelectorAll(["li"]);
-        // alert(d.length);
-        var e = document.querySelector(".row-6").querySelectorAll(["li"]);
-        // alert(e.length);
-       
-         a[x].remove();
-         b[x].remove();
-         c[x].remove();
-         d[x].remove();
-         e[x].remove();
-      
+
+
+          getValue();
+          RemoveValue();  
           gstCalc();
    }
 
    function edit(){
 
-    var r = document.querySelector("#edit-option").value;
-    var x = r-1;
-    var a = document.querySelector(".row-2").querySelectorAll(["li"]);
-    var b = document.querySelector(".row-3").querySelectorAll(["li"]);
-    var c = document.querySelector(".row-4").querySelectorAll(["li"]);
-    var d = document.querySelector(".row-5").querySelectorAll(["li"]);
-    var e = document.querySelector(".row-6").querySelectorAll(["li"]);
-
+    getValue();
     
     document.querySelector("#pcode").value = a[x].textContent;
     document.querySelector("#pname").value = b[x].textContent;
@@ -165,12 +118,7 @@ function add(){
     document.querySelector("#ppu").value = d[x].textContent;
     document.querySelector("#amt").value = e[x].textContent;
 
-    a[x].remove();
-    b[x].remove();
-    c[x].remove();
-    d[x].remove();
-    e[x].remove();
-
+    removeValue();
 
    }
 
@@ -198,10 +146,39 @@ function add(){
          document.querySelector("#gt-text").innerHTML ="Rs"+ Math.round(y);     
       //...............................................................................
      
-         productName  = document.querySelector("#pname").value = ' ' ;
-         productCode  = document.querySelector("#pcode").value = ' ' ;
-         unitPrice    = document.querySelector("#ppu").value   = ' ' ;
-         quantity     = document.querySelector("#qty").value   = ' ' ;
-         amount       = document.querySelector("#amt").value   = ' ' ;
+         clearInput();
         
+     }
+
+     function clearInput(){
+
+
+        productName  = document.querySelector("#pname").value = ' ' ;
+        productCode  = document.querySelector("#pcode").value = ' ' ;
+        unitPrice    = document.querySelector("#ppu").value   = ' ' ;
+        quantity     = document.querySelector("#qty").value   = ' ' ;
+        amount       = document.querySelector("#amt").value   = ' ' ;
+     }
+
+
+     function getValue(){
+
+
+        var r = document.querySelector("#edit-option").value;
+        var x = r-1;
+        var a = document.querySelector(".row-2").querySelectorAll(["li"]);
+        var b = document.querySelector(".row-3").querySelectorAll(["li"]);
+        var c = document.querySelector(".row-4").querySelectorAll(["li"]);
+        var d = document.querySelector(".row-5").querySelectorAll(["li"]);
+        var e = document.querySelector(".row-6").querySelectorAll(["li"]);
+       
+     }
+     function removeValue(){
+
+        a[x].remove();
+        b[x].remove();
+        c[x].remove();
+        d[x].remove();
+        e[x].remove();
+
      }

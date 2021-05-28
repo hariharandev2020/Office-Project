@@ -263,11 +263,19 @@ ul li{
 
 @media only screen and (max-width:900px){
 
+        .table-head h1{
+
+            font-size: 1rem;
+        }
+        .table-total-3{
+
+            transform: translate(110%,42px);
+        }
 
     
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:700px){
 
 
         .container{
@@ -284,7 +292,11 @@ ul li{
             flex-direction: column;
     
         }
-        .column h1{
+        .table-head{
+
+            padding: 10px 17px;
+        }
+        .table-head h1{
 
             font-size: 1rem;
         }
@@ -292,9 +304,9 @@ ul li{
             width: 150px;
             display: flex;
             color: white;
-            background-color: lightgrey;
+            background-color: white;
             justify-content: space-around;
-            transform: translate(105%, 38px);
+            transform: translate(150%, 38px);
         }
         .content{
 
@@ -308,15 +320,26 @@ ul li{
             margin-left: 3%;;
         }
         #submit{
-            margin-left: 19%;
+            margin-left: 10%;
             width: 70px;
             height: 30px;
             font-size: 1rem;
-            }
+        }
+        .edit-input{
 
+            height: 20px;
+            width: 60px;
+            font-size: 0.9rem;
+            padding: 2px;
+            margin: 0px;
+        }
+        .edit-option{
+
+            margin: 65px 0px 0px 22%;
+        }    
 
 }
-@media only screen and (max-width:340px){
+@media only screen and (max-width:380px){
 
     #head{
 
@@ -335,14 +358,15 @@ ul li{
     width: 70px;
     height: 30px;
     font-size: 1rem;
+    text-align: center;
     }
-    .column h1{
-        font-size: 0.6rem;
+    .table-head h1{
+        font-size: 0.7rem;
     }
     .table-total-3{
 
         width: 150px;
-        transform: translate(88%,20px);
+        transform: translate(98%,20px);
     }
     #total-text{
 
@@ -353,8 +377,20 @@ ul li{
         height: 20px;
         width: 60px;
         font-size: 0.9rem;
-        padding: 2px;
+        margin: 0px 10px;
+        text-align: center;
+
     }
+    .edit-option{
+
+        margin: 65px 0px 0px 22%;
+        
+    }
+    #edit-option{
+
+        width: 40px;
+    }
+    
 
 
 }
