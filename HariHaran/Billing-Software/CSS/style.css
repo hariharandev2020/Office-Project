@@ -274,7 +274,23 @@ ul li{
 
     
 }
+@media only screen and (max-width:750px){
 
+    .table-head h1{
+
+        font-size: 0.9rem;
+        
+    }
+    .table-total-3{
+
+        transform: translate(80%,42px);
+    }
+    .table-head{
+
+        padding: 10px 16px;
+    }
+
+}
 @media only screen and (max-width:700px){
 
 
