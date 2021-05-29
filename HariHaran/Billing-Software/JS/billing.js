@@ -97,30 +97,7 @@ function add(){
      clearInput();    
      gstCalc();
 
-}  
-    //Removing Item
-
-   function remove(){
-
-
-          getValue();
-          RemoveValue();  
-          gstCalc();
-   }
-
-   function edit(){
-
-    getValue();
-    
-    document.querySelector("#pcode").value = a[x].textContent;
-    document.querySelector("#pname").value = b[x].textContent;
-    document.querySelector("#qty").value = c[x].textContent;
-    document.querySelector("#ppu").value = d[x].textContent;
-    document.querySelector("#amt").value = e[x].textContent;
-
-    removeValue();
-
-   }
+}
 
    function gstCalc() {
        
@@ -139,10 +116,8 @@ function add(){
           //  GST Calc
      
          var x  = (ans * 12)/100;
-         // alert(x);
          var y = Number(ans) + x;
          document.querySelector("#gst-text").innerHTML =  x;
-         // alert(y);
          document.querySelector("#gt-text").innerHTML ="Rs"+ Math.round(y);     
       //...............................................................................
      
@@ -160,25 +135,51 @@ function add(){
         amount       = document.querySelector("#amt").value   = ' ' ;
      }
 
+   function remove(){
 
-     function getValue(){
+    
+    var a = document.querySelector(".row-2").querySelectorAll(["li"]);
+    var b = document.querySelector(".row-3").querySelectorAll(["li"]);
+    var c = document.querySelector(".row-4").querySelectorAll(["li"]);
+    var d = document.querySelector(".row-5").querySelectorAll(["li"]);
+    var e = document.querySelector(".row-6").querySelectorAll(["li"]);
+    var x = document.querySelector("#edit-option").value;
+    var r = x-1;
+    
+    a[r].remove();
+    b[r].remove();
+    c[r].remove();
+    d[r].remove();
+    e[r].remove();
+
+    gstCalc();
+  }
+
+    function edit(){
+
+            
+            var x = document.querySelector("#edit-option").value;
+            var r = x-1;
+
+            var a = document.querySelector(".row-2").querySelectorAll(["li"]);
+            var b = document.querySelector(".row-3").querySelectorAll(["li"]);
+            var c = document.querySelector(".row-4").querySelectorAll(["li"]);
+            var d = document.querySelector(".row-5").querySelectorAll(["li"]);
+            var e = document.querySelector(".row-6").querySelectorAll(["li"]);
+    
+            document.querySelector("#pcode").value = a[r].textContent;
+            document.querySelector("#pname").value = b[r].textContent;
+            document.querySelector("#qty").value = c[r].textContent;
+            document.querySelector("#ppu").value = d[r].textContent;
+            document.querySelector("#amt").value = e[r].textContent;
+           
+            a[r].remove();
+            b[r].remove();
+            c[r].remove();
+            d[r].remove();
+            e[r].remove();
+           
+
+    }
 
 
-        var r = document.querySelector("#edit-option").value;
-        var x = r-1;
-        var a = document.querySelector(".row-2").querySelectorAll(["li"]);
-        var b = document.querySelector(".row-3").querySelectorAll(["li"]);
-        var c = document.querySelector(".row-4").querySelectorAll(["li"]);
-        var d = document.querySelector(".row-5").querySelectorAll(["li"]);
-        var e = document.querySelector(".row-6").querySelectorAll(["li"]);
-       
-     }
-     function removeValue(){
-
-        a[x].remove();
-        b[x].remove();
-        c[x].remove();
-        d[x].remove();
-        e[x].remove();
-
-     }
