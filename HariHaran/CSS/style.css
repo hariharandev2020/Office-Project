@@ -29,7 +29,7 @@
 .main{
 
     display: grid;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 250px auto;
     grid-row-gap:20px;
     width: 80%;
     height: 100%;
@@ -90,15 +90,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
 }
 .profile-data span{
     font-weight: bolder;
     letter-spacing: 0px;
     background-color: white;
 }
+p{
+    font-size: 1.5rem;
+}
 .profile-data a,.card-1 a,.footer-2 a{
     color: #a5a0a0;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 .profile-data a:hover,.card-1 a:hover,.footer-2 a:hover{
 
@@ -111,12 +116,12 @@
  
     color: #00ACEE;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: 'Mate SC', serif;
 }
 .skill-data p,.content-header p,#p1-header p{
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bolder; 
     color: white;
     text-align: center;
@@ -126,8 +131,8 @@
 .slide{
 
     margin: auto;
-    width: 60%;
-    height: 200px;
+    width: 50%;
+    height: 250px;
     background-image: url(images/web-development-programming-resized.jpg);
     background-position: center;
     background-size: cover;
