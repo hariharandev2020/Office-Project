@@ -1,0 +1,275 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+.card{
+    grid-area: card;
+}
+.skills{
+
+    grid-area: skill;
+}
+.content{
+    grid-area:conts;
+}
+.container{
+
+    width: 100%;
+    height: auto;
+    margin:0px auto;
+    padding:2px;
+    
+}
+.main{
+
+    display: grid;
+    grid-template-rows: 200px auto;
+    grid-row-gap:20px;
+    width: 80%;
+    height: 100%;
+    background-image: url('images/bg3.png');
+    background-attachment: fixed;
+    margin: auto;
+    grid-template-areas: 'card '
+                         'skill'
+                         'conts';
+    position: relative;
+    padding: 40px 0px;
+
+}
+.card{
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    
+}
+.profile{
+  
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+.profile:hover{
+
+    box-shadow: 1px 1px 10px lightgrey;
+}
+.profile-pic{
+
+    margin-top: -25px;
+}
+.profile-pic img{
+
+    width:  70px;
+    height: 70px;
+    border-radius: 60px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 2px grey; 
+
+}
+.profile-pic img:hover{
+
+        transition: 1s;
+        opacity: 0.8;
+}   
+.profile-data{
+
+    flex-grow: 1;
+    line-height: 2;
+    color: #6a6868;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-data span{
+    font-weight: bolder;
+    letter-spacing: 0px;
+    background-color: white;
+}
+.profile-data a,.card-1 a,.footer-2 a{
+    color: #a5a0a0;
+    text-decoration: none;
+}
+.profile-data a:hover,.card-1 a:hover,.footer-2 a:hover{
+
+    color: #00ACEE;
+    text-decoration: underline;
+    transition: 500ms;
+
+}
+.profile-data h2,.card-1 h3{
+ 
+    color: #00ACEE;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: 'Mate SC', serif;
+}
+.skill-data p,.content-header p,#p1-header p{
+
+    font-size: 2rem;
+    font-weight: bolder; 
+    color: white;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+}
+
+.slide{
+
+    margin: auto;
+    width: 60%;
+    height: 200px;
+    background-image: url(images/web-development-programming-resized.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: img 30s 1s infinite;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px grey;
+
+}
+@keyframes img{
+
+    10%{background-image: url('images/HTML-CSS-Javascript.jpg');}
+    30%{background-image: url('images/html.png');}
+    60%{background-image: url('images/css3.jpg');}
+    80%{background-image: url('images/js.jpg');}
+    100%{background-image: url('images/term1.png');}
+}
+.content{
+
+    width: 80%;
+    height: auto;   
+    margin: auto;
+    background-image: url(images/bg6.jpg);
+    background-attachment: fixed;
+}
+.content-main{
+
+    padding: 20px 10px;
+    color: white;
+}
+.project-1{
+
+    height: auto;
+    width: 100%;
+}
+.projects{
+
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 10px 30px;
+}
+.card-1{
+
+    display: flex;
+    color: black;
+    font-size: 2rem;
+    padding: 40px 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid lightgrey;
+    background-image: url('images/slider-1.png');
+    background-position: bottom;
+
+}
+.card-1:hover{
+
+    box-shadow: 0px 0px 4px lightgrey;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.card-1 img{
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.footer{
+
+     width: 100%;
+     height: auto;
+    }
+.footer-content{
+
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer-1{
+
+        width: 30%;
+}
+.footer-2{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgoldenrodyellow;
+    padding: 30px 0px;
+
+}
+@media only screen and (max-width:800px) {
+
+        .card{
+
+            width:40%;
+        }
+        .projects{
+
+            width: 90%;
+            padding: 10px 20px;
+        }
+    
+}
+@media only  screen and (max-width:600px) {
+    
+
+        .main{
+            width: 100%;
+        }
+
+        .card{
+
+            width: 60%;
+        }
+        .content{
+
+            width: 100%;
+        }
+
+
+}
+@media only screen and (max-width:500px){
+
+        .card-1{
+
+            padding: 30px 0px;
+        }
+        .projects{
+
+            grid-template-columns: auto;
+        }
+
+        .footer-1{
+
+            width: 100%;
+        }
+        
+
+}
