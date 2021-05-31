@@ -29,7 +29,7 @@
 .main{
 
     display: grid;
-    grid-template-rows: 250px auto;
+    grid-template-rows: 300px auto;
     grid-row-gap:20px;
     width: 80%;
     height: 100%;
@@ -44,7 +44,7 @@
 
 }
 .card{
-    width: 30%;
+    width: 35%;
     height: 100%;
     margin: auto;
     
@@ -84,7 +84,7 @@
 .profile-data{
 
     flex-grow: 1;
-    line-height: 2;
+    line-height: 1.8;
     color: #6a6868;
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@ p{
     grid-auto-rows: auto;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
-    padding: 10px 30px;
+    padding: 30px 30px;
 }
 .card-1{
 
@@ -229,11 +229,11 @@ p{
     padding: 30px 0px;
 
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1000px) {
 
         .card{
 
-            width:40%;
+            width:50%;
         }
         .projects{
 
@@ -242,29 +242,23 @@ p{
         }
     
 }
-@media only  screen and (max-width:600px) {
+@media only  screen and (max-width:800px) {
     
 
         .main{
+
             width: 100%;
         }
 
         .card{
 
             width: 60%;
+            padding: 30px 0px;
         }
         .content{
 
             width: 100%;
-        }
-
-
-}
-@media only screen and (max-width:500px){
-
-        .card-1{
-
-            padding: 30px 0px;
+    
         }
         .projects{
 
@@ -276,5 +270,29 @@ p{
             width: 100%;
         }
         
+
+
+}
+@media only screen and (max-width:470px){
+
+        
+    .card{
+            
+        width: 80%;
+        padding:0px;
+
+    }
+        .slide{
+
+            width: 80%;
+        }
+
+        .footer-2{
+
+            flex-direction: column;
+            line-height: 1.8;
+            text-align: center;
+        }
+
 
 }
